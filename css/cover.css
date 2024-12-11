@@ -1,0 +1,498 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #003a6b;
+  color: white;
+  width: 100%;
+}
+
+header{
+  background-color: #003a6b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.header-name{
+  width: 50vw;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  padding: 0 50px 0 10px;
+  width: 50vw;
+}
+
+.header-name img{
+  padding-right: 20px;
+}
+
+nav{
+  width: 50vw;
+  padding-right: 50px;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(201, 197, 201);
+}
+
+.active{
+  color: white;
+  font-weight: bold;
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #003a6b;
+    border: 1px solid #fff;
+    padding: 20px;
+  }
+
+  nav a{
+    padding-top: 10px;
+    display: block;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+  }
+}
+
+
+.cover-info-head{
+  padding-top: 25px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 35px;
+}
+
+.cover-info-head img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cover-info-head h1{
+  padding-top: 10px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.cover-info-head h2{
+  font-size: 20px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.cover-info-head h3{
+  padding-bottom: 5px;
+}
+
+.cover-info-head p{
+  text-align: center;
+  margin-top: 35px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.header-button{
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.header-button:hover{
+  background-color: white;
+  font-size: 25px;
+  color: #003a6b;
+}
+
+/* Counter Section */
+.counter {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background: #e0e0e0;
+  animation: fadeIn 2s ease-in;
+  color: #003a6b;
+}
+
+.counter-item {
+  text-align: center;
+  font-size: 24px;
+}
+
+.counter-item h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Statistics Section */
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background: #f7f7f7;
+  animation: fadeIn 2s ease-in;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.stat-item {
+  text-align: center;
+  width: 30%;
+  font-size: 20px;
+}
+
+.statistics{
+  color: #003a6b;
+}
+
+
+/* Services Overview */
+.services-sec {
+  padding: 50px;
+  background: white;
+  /* display: flex; */
+  justify-content: space-around;
+  animation: fadeIn 2s ease-in;
+  color: #003a6b;
+}
+
+.services {
+  padding: 50px;
+  background: white;
+  /* display: flex; */
+  justify-content: space-around;
+  animation: fadeIn 2s ease-in;
+  color: #003a6b;
+}
+
+.serv{
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  font-weight: bold;
+  justify-content: space-evenly;
+}
+
+.service-card {
+  
+  /* flex: 1 1 calc(33.33% - 20px);
+  padding: 20px;
+  box-sizing: border-box;
+  background: lightgreen;
+  border-radius: 5px; */
+
+  text-align: center;
+  padding: 20px;
+  background: #f1f1f1;
+  width: 20%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.1);
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Achievements Section */
+.achievements {
+  padding: 50px;
+  background: white;
+  text-align: center;
+}
+
+.achievements h2 {
+  font-size: 32px;
+  color: #003a6b;
+  animation: fadeIn 2s ease-in;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 0px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-left: 20px;
+}
+
+.prev{
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* Caption text */
+.text {
+  color: #003a6b;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.S_active, .dot:hover {
+  background-color: gray;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.ach-button {
+  color: #003a6b;
+  background-color: transparent;
+  border: 1px solid #003a6b;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: #003a6b;
+}
+
+.ach-button:hover{
+  background-color: #003a6b;
+  color: white;
+  font-size: 24px;
+}
+
+
+/* Testimonial section */
+.testimonials {
+  padding: 50px;
+  background: #f9f9f9;
+  text-align: center;
+  color: #003a6b;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  color: #003a6b;
+  animation: fadeIn 2s ease-in;
+}
+
+/* Apply the same styles for slides, dots, and buttons for testimonials */
+.mySlides-testimonials {
+  display: none;
+}
+
+.dot-testimonials {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot-testimonials.active, .dot-testimonials:hover {
+  background-color: gray;
+}
+
+/* Mission and Vision */
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f1f1f1;
+  color: #003a6b;
+  animation: fadeIn 2s ease-in;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+
+.mission-vision h2{
+  color: #003a6b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mission, .vision {
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: rgb(230, 230, 230);
+  color: #003a6b;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 2s ease-in;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+
+  .services {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .service-card {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+
+  .statistics, .counter {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .stats, .counter-item {
+      width: 100%;
+  }
+
+  .mission-vision {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .serv {
+      flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .serv {
+      flex: 1 1 calc(100% - 20px);
+  }
+}
