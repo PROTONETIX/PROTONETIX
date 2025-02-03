@@ -10,10 +10,6 @@ p{
   text-align: justify;
 }
 
-.disc{
-  width: 90%;
-}
-
 header{
   background-color: #003a6b;
   color: white;
@@ -149,7 +145,8 @@ nav a{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 80%;
+  text-align: justify;
 }
 
 .header-button{
