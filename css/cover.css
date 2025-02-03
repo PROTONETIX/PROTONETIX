@@ -483,6 +483,15 @@ footer {
   .mission-vision {
       flex-direction: column;
   }
+  .mySlides{
+    width: 100%;
+  }
+  .mySlides img{
+    width: 100%;
+  }
+  .mission, .vision{
+    width: 90%;
+  }
 }
 
 @media (max-width: 768px) {
