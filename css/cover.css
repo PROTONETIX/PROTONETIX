@@ -10,6 +10,10 @@ p{
   text-align: justify;
 }
 
+.disc{
+  width: 90%;
+}
+
 header{
   background-color: #003a6b;
   color: white;
