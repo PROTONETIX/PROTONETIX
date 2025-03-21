@@ -1,0 +1,151 @@
+/* Additional styles for the careers page */
+.careers-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1600/500') no-repeat center center/cover;
+    color: white;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.careers-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.careers-hero p {
+    font-size: 1.5rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.benefit-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-card i {
+    font-size: 2.5rem;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #0077cc;  
+}
+
+.jobs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.job-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.job-location {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.job-location i {
+    margin-right: 0.5rem;
+    color: #003a6b;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 3px solid #2ecc71;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.job-title {
+    color: #2ecc71;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.step {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 auto 1rem;
+    font-size: 2.5rem;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #0077cc;  
+}
+
+@media (max-width: 768px) {
+    .benefits-grid,
+    .jobs-list,
+    .testimonials-grid,
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+}
