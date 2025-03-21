@@ -1,0 +1,186 @@
+/* 
+ * Animations Stylesheet for Protonetix Website
+ * Contains keyframes and animation classes for elements
+ */
+
+/* ---------- Keyframes Animations ---------- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(30px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* ---------- Animation Classes ---------- */
+.animate-fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease forwards;
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 1s ease forwards;
+}
+
+.animate-fade-in-left {
+    animation: fadeInLeft 1s ease forwards;
+}
+
+.animate-fade-in-right {
+    animation: fadeInRight 1s ease forwards;
+}
+
+.animate-zoom-in {
+    animation: zoomIn 1s ease forwards;
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Text animation for hero section */
+.animate-text {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.animate-text-delay {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards 0.3s;
+}
+
+.animate-text-delay-2 {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards 0.6s;
+}
+
+.animate-text-delay-3 {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards 0.9s;
+}
+
+/* On-scroll animation classes for AOS-like functionality */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-aos="fade-down"] {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-aos="zoom-in"] {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+/* Delayed animations */
+[data-aos][data-aos-delay="100"] {
+    transition-delay: 0.1s;
+}
+
+[data-aos][data-aos-delay="200"] {
+    transition-delay: 0.2s;
+}
+
+[data-aos][data-aos-delay="300"] {
+    transition-delay: 0.3s;
+}
+
+[data-aos][data-aos-delay="400"] {
+    transition-delay: 0.4s;
+}
+
+[data-aos][data-aos-delay="500"] {
+    transition-delay: 0.5s;
+}
